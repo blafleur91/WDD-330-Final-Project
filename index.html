@@ -3,9 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Homepage</title>
+
+    <meta name="description" content="">
+    <meta name="author" content="Braxton LaFleur">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+
+    <script type="module" src="scripts/home.js"></script>
+
 </head>
 <body>
+    <header>
+        <img src="images/favicon.ico" alt="Site Logo" width="16" height="16">
+        <span class="name">Lego Database Home</span>
+        <button id="ham-btn" class="hamburger" aria-label="Navigation Menu"></button>
+        <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="database.html">Database</a></li>
+            <li><a href="form.html">Create Account</a></li>
+        </ul>
+    </nav>
+    </header>
+    <main>
+        <img src="images/database-banner-img.webp" alt="Star Wars logo Lego Set" class="banner">
+        <h1>Homepage</h1>
+        <div id="welcome" class="welcome"></div>
+        <div class="home-container">
+            <p>Hello and Welcome to this website! This website's purpose is to document Lego Sets that have been released, as well as a variety of information about them.
+                This is not a site for selling these sets.
+                You will be able to see some examples of how the sets are presented in the database on this page. If you click on them you will be able to see more information about them.
+            </p>
+            <div  id="card-container"></div>
+        </div>
+
+        <dialog id="setModal" class="setModal"></dialog>
+
+    </main>
+    <footer>
+            <p>
+                ©<span id="currentyear"></span> | Braxton LaFleur | Utah
+            </p>
+            <p id="lastModified"></p>
+    </footer>
     
 </body>
 </html>
